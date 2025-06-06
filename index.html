@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Puzzle de Redes - Desafio de Pontos Extras</title>
+    <title>Puzzle de Redes</title>
+    <meta http-equiv="X-Pista-1" content="A senha é o MD5 de uma sigla de 3 letras em redes.">
+    <meta http-equiv="X-Pista-2" content="Essa sigla traduz nomes para IPs (ex: google.com → 8.8.8.8).">
+    <script>
+        // Redireciona para /dns se o caminho estiver correto
+        if (window.location.pathname === '/dns') {
+            document.write("<h1>Correto! A senha do ZIP é o MD5 de 'dns'.</h1>");
+        }
+    </script>
 </head>
 <body>
-    <h1>Desafio de Redes - Servidor Secreto</h1>
-    <p>Parabéns, hackers éticos! Vocês descobriram nosso servidor secreto.</p>
-    <p>Para ganhar pontos extras, encontrem o arquivo protegido e quebrem a senha.</p>
-    
-    <h2>Dicas:</h2>
-    <ol>
-        <li>O arquivo está em <code>recompensa.zip</code> neste repositório.</li>
-        <li>A senha é um hash MD5 de uma sigla importante em redes.</li>
-        <li>A sigla tem 3 letras e está relacionada a "tradução de nomes".</li>
-        <li>O hash MD5 da palavra é <code>e44f9b6979a3f1d0a90478a7fb2eb6da</code>.</li>
-    </ol>
-    
-    <h2>Regras:</h2>
-    <ul>
-        <li>Trabalhem em equipes de até 3 pessoas.</li>
-        <li>O primeiro a abrir o arquivo ganha 2 pontos extras.</li>
-        <li>Demais equipes que completarem em 24h ganham 1 ponto.</li>
-        <li>Documentem como descobriram a senha.</li>
-    </ul>
-    
-    <p>Link do arquivo: <a href="recompensa.zip">recompensa.zip</a></p>
+    <h1>Pista: Use <code>curl -I</code> para inspecionar os cabeçalhos desta página.</h1>
 </body>
 </html>
